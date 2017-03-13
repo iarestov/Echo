@@ -1,11 +1,12 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using Castle.Core.Internal;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Echo")]
+[assembly: AssemblyTitle("Echo.Domain")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
@@ -20,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a44eb9f0-47df-4594-b02f-8d55726906f6")]
+[assembly: Guid("c63f8ebd-c757-42b6-b0e1-1fe9af626f1c")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -35,4 +36,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-
+[assembly: InternalsVisibleTo("Echo.Domain.Tests")]
+[assembly: InternalsVisibleTo(InternalsVisible.ToDynamicProxyGenAssembly2)]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
