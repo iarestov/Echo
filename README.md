@@ -11,7 +11,7 @@ protocol free echo server logic
 tests for domain logic
 
 # design
-TCP used for simplicity, for better performance client/server should use UDP. Also need to make descision how handle datagram loss. I some application it's can allowed, or we need to implement some ACK. 
+TCP used for simplicity, for better performance client/server should use UDP. Also need to make descision how handle datagram loss. Some kind of applications can allow it, or we need to implement some ACK to build reliable UDP exchange. 
 
 
 
